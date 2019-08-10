@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Albums | Muse</title>
+		<link rel="stylesheet" href="style.css">
+		<style media="screen">
+			#content::before {
+				background-image: url(img/bgAlbums.jpg);
+			}
+			#coverShow {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/1-Show.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverShow:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/1-ShowOver.png');
+				background-size: 200px 200px;
+			}
+			#coverOrigin {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/2-Origin.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverOrigin:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/2-OriginOver.png');
+				background-size: 200px 200px;
+			}
+			#coverAbsol {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/3-Absol.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverAbsol:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/3-AbsolOver.png');
+				background-size: 200px 200px;
+			}
+			#coverBlack {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/4-Black.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverBlack:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/4-BlackOver.png');
+				background-size: 200px 200px;
+			}
+			#coverResist {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/5-Resist.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverResist:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/5-ResistOver.png');
+				background-size: 200px 200px;
+			}
+			#coverLaw {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/6-Law.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverLaw:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/6-LawOver.png');
+				background-size: 200px 200px;
+			}
+			#coverDrones {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/7-Drones.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverDrones:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/7-DronesOver.png');
+				background-size: 200px 200px;
+			}
+			#coverEP {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/EP.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverEP:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/EPOver.png');
+				background-size: 200px 200px;
+			}
+			#coverMMEP {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/MMEP.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverMMEP:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/MMEPOver.png');
+				background-size: 200px 200px;
+			}
+			#coverRandom {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/Random.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverRandom:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/RandomOver.png');
+				background-size: 200px 200px;
+			}
+			#coverHullabaloo {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/Hullabaloo.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverHullabaloo:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/HullabalooOver.png');
+				background-size: 200px 200px;
+			}
+			#coverHAARP {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/HAARP.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverHAARP:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/HAARPOver.png');
+				background-size: 200px 200px;
+			}
+			#coverRome {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/Rome.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverRome:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/RomeOver.png');
+				background-size: 200px 200px;
+			}
+			#coverKick {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/Kick.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverKick:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/KickOver.png');
+				background-size: 200px 200px;
+			}
+			#coverDigDown {
+				position: relative;
+				height: 200px;
+				width: 200px;
+				background: url('img/DigDown.png');
+				background-size: 200px 200px;
+				z-index: 3;
+			}
+			#coverDigDown:hover {
+				height: 200px;
+				width: 200px;
+				background: url('img/DigDownOver.png');
+				background-size: 200px 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Albums</h1>
+			<img id="logo" src="img/logo.svg" alt="Muse's logo" height="180">
+		</header>
+		<main>
+			<div id="content">
+				<h2>Seven studio albums so far...</h2>
+				<div class="album">
+					<div id="coverShow"><a href="Showbiz.html"></a></div>
+					<p class="infos">
+					Showbiz is the debut studio album by Muse, released
+					in the United Kingdom on 4 October 1999. <br>
+					The album was produced by John Leckie and Paul Reeve in conjunction
+					with the band. <br>
+					Showbiz was a moderate commercial success.
+					</p>
+				</div>
+
+				<div class="album">
+					<div id="coverOrigin"><a href="Origin.html"></a></div>
+					<p class="infos">
+					Origin of Symmetry is the second studio album by Muse
+					released on 17 July 2001. <br>
+					The album was a critical and commercial success. <br>
+					The title and theme for the album comes from a concept put forward by
+					the theoretical physicist Michio Kaku in his book Hyperspace.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverAbsol"><a href="Absolution.html"></a></div>
+					<p class="infos">
+					Absolution is the third studio album by Muse. It was
+					released on 15 September 2003. <br>
+					The album followed up on Origin of Symmetry's diverse musical
+					tendencies and elaborate sound, while also having a more focused and
+					consistent theme and aesthetic throughout. <br>
+					Absolution has a noticeably darker and heavier tone musically, with
+					a lyrical focus on the theological and apocalyptic concepts.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverBlack"><a href="Black.html"></a></div>
+					<p class="infos">
+					Black Holes and Revelations is the fourth studio album by Muse,
+					released on 3 July 2006. <br>
+					Recording was split between New York and France, and it was the first
+					time Muse had taken a more active role in the album's production. <br>
+					The album was a change in style from Muse's previous albums, and the
+					band cited influences that included Depeche Mode, Millionaire,
+					Lightning Bolt, Sly and the Family Stone, and music from southern Italy.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverResist"><a href="Resistance.html"></a></div>
+					<p class="infos">
+					The Resistance is the fifth studio album by Muse, released in Europe
+					on 14 September 2009. <br>
+					Upon its release, it topped the album charts in 19 countries.
+					It also debuted at number three on the Billboard 200 chart, selling
+					128,000 copies during the first week. <br>
+					Critics were mostly complimentary about the album, with much of the
+					praise directed towards its ambition and classical music influences.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverLaw"><a href="Law.html"></a></div>
+					<p class="infos">
+					The 2nd Law is the sixth studio album by Muse. It was released on 28
+					September 2012. <br>
+					The title of the album refers to the second law of thermodynamics
+					and the album's cover art features a map of the human brain's
+					pathways, which was taken from the Human Connectome Project.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverDrones"><a href="Drones.html"></a></div>
+					<p class="infos">
+					Drones is the seventh studio album by Muse, released on June 2015. <br>
+					It was recorded between October 2014 and April 2015 at The Warehouse
+					Studio in Vancouver, British Columbia, and co-produced by the band
+					and Robert John "Mutt" Lange. <br>
+					Muse aimed to return to the simpler guitar-bass-drums rock sound of
+					their earlier albums.
+					</p>
+				</div>
+				
+				<h2>Others</h2>
+					<div class="album">
+					<div id="coverEP"><a href="EP.html"></a></div>
+					<p class="infos">
+					Muse is the debut extended play (EP) by Muse. <br>
+					Limited to 999 hand-numbered copies, it was released on 11 May 1998. <br>
+					Three of the EP's four songs – "Overdue", "Cave" and "Escape" – were
+					re-recorded for the band's full-length debut album Showbiz.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverMMEP"><a href="MMEP.html"></a></div>
+					<p class="infos">
+					Muscle Museum is the second extended play (EP) by Muse. <br>
+					Four of the EP's five original songs – "Muscle Museum", "Sober",
+					"Uno" and "Unintended" – were re-recorded for the band's
+					full-length debut, Showbiz.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverRandom"><a href="Random.html"></a></div>
+					<p class="infos">
+					Random 1-8 is the third extended play (EP) by Muse. <br>
+					The EP was released in Japan to promote the band's tour. <br>
+					It consists of six B-sides recorded during the Showbiz era, and two
+					live tracks. There are also three remixes of "Sunburn" after the last track.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverHullabaloo"><a href="Hullabaloo.html"></a></div>
+					<p class="infos">
+					Hullabaloo Soundtrack, also known as Hullabaloo, is a compilation
+					album by Muse and the soundtrack to their live video album
+					Hullabaloo: Live at Le Zenith, Paris. <br>
+					The album comprises one disc of previously released B-sides and a
+					second disc of live recordings from the band's performances at Le
+					Zénith in Paris, France on 28 and 29 October 2001.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverHAARP"><a href="Haarp.html"></a></div>
+					<p class="infos">
+					HAARP is the third live album and video by Muse, released in 2008. <br>
+					The CD documents the band's performance at London's Wembley Stadium on 16
+					June 2007, while the DVD contains 20 tracks from the performance on 17
+					June.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverRome"><a href="Rome.html"></a></div>
+					<p class="infos">
+					Live at Rome Olympic Stadium is a live album by Muse, released on
+					November 2013. <br>
+					The concert was a part of The Unsustainable Tour, which is a moniker
+					for the band's summer 2013 European leg of The 2nd Law World Tour.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverKick"><a href="Kick.html"></a></div>
+					<p class="infos">
+					New Kind of Kick is a cover of a song by The Cramps that was done as a
+					Halloween special in 2016.
+					</p>
+				</div>
+				
+				<div class="album">
+					<div id="coverDigDown"><a href="DigDown.html"></a></div>
+					<p class="infos">
+						Dig Down is the first glimpse of the eighth studio album. <br>
+						This new single was released on 18 May 2017.
+					</p>
+				</div>
+			
+			</div>
+		</main>
+		<footer>
+		
+		</footer>
+	</body>
+</html>
